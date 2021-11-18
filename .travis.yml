@@ -18,7 +18,7 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng build --prod --base-href https://zackxz.github.io/bitcoin-order-app/
+  - export NODE_OPTIONS=--openssl-legacy-provider; ng build --prod --base-href https://zackxz.github.io/bitcoin-order-app/
 
 deploy:
   provider: pages
